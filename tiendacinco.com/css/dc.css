@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Sección de productos */
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Título de la sección */
+.productos h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contenedor de los productos */
+.productos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo para cada ficha de producto */
+.ficha {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Imagen del producto */
+.ficha img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Información del producto */
+.ficha .precio {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Descripción corta del producto */
+.ficha .descripcion p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Botones de la ficha */
+.ficha .botones button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ficha .botones button:hover {
+    background-color: #e55339;
+}
+
+/* Efecto hover sobre la ficha */
+.ficha:hover {
+    transform: translateY(-10px);
+}
+
+/* Mejorar la disposición en pantallas más grandes */
+@media (min-width: 768px) {
+    .productos-container {
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:lightblue;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color:#ff6347;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+  
+    background-position: center;
+    color:darkgreen;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.banner .btn:hover {
+    background-color: #e55339;
+}
+
+
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.productos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.producto p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.producto button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #e55339;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.contacto {
+    padding: 50px 20px;
+    background-color:rgba(235,233,249,1);
+    text-align: center;
+}
+
+.contacto-header {
+    margin-bottom: 30px;
+}
+
+.contacto-header h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contacto-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contacto-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contacto-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contacto-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contacto-form button {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+    background-color: #e55339;
+}
+
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-media p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media .social-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media .social-icon img:hover {
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,257 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:cornflowerblue;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif; /* Cambiar a una fuente más elegante */
+    background-color:rgba(179,220,237,1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color:mediumpurple; /* Color de fondo en rojo brillante */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Títulos en las páginas de productos */
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Sección de productos */
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contenedor de productos */
+.productos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo para cada producto */
+.producto {
+    background-color:#ddd;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Bordes más redondeados */
+    padding: 20px;
+    width: 280px; /* Aumentar un poco el tamaño de los productos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave y más grande */
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Evitar que las imágenes salgan de los bordes */
+}
+
+/* Estilo de la imagen en los productos */
+.producto img {
+    width: 50%; /* Imagen ocupa todo el ancho */
+    height: 150px; /* Altura fija para que todas las imágenes tengan el mismo tamaño */
+    object-fit: cover; /* Mantener la proporción de la imagen sin distorsión */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Títulos de los productos */
+.producto h3 {
+    margin: 15px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Descripción y precio de los productos */
+.producto p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los botones */
+.producto button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #e55339; /* Cambio de color al pasar el mouse */
+}
+
+/* Efecto de hover en los productos */
+.producto:hover {
+    transform: translateY(-10px); /* Sutil elevación cuando el cursor pasa sobre el producto */
+}
+
+/* Página de detalle de cada producto */
+.producto-detalle {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(243,226,199,1);;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto-detalle img {
+    width: 80%;
+    max-width: 300px; /* Limitar el tamaño de la imagen en las páginas de detalle */
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.producto-detalle h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.producto-detalle p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el menú y los enlaces */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;  /* Inicialmente oculto */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41; /* Cambiar el color del botón al pasar el ratón */
+}
+
+
+
+
+/* Fuente más bonita desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+
+
+.comentarios {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.formulario-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.comentarios-lista {
+    margin-top: 20px;
+}
+
+.comentario {
+    background-color:khaki;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border-left: 5px solid #4CAF50;
+    font-size: 16px;
+}

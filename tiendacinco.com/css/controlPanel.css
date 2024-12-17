@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(to right, #40dce7, #ff758f);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background: #6fdd9d;
+    color: #fff;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr {
+    transition: background 0.3s;
+}
+
+tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background: #ffe7ed;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody img {
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Buttons */
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff6090;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+a.button:hover {
+    background: #ff4d79;
+}
+
+table a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 5px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+table a:hover {
+    transform: scale(1.2);
+}
+
+table a:nth-child(1) {
+    color: #007bff; /* Edit Icon Color */
+}
+
+table a:nth-child(2) {
+    color: #dc3545; /* Delete Icon Color */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+form input:focus {
+    border-color: #ff6090;
+    outline: none;
+}
+
+form button {
+    background: #ff6090;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ff4d79;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+
+    form input[type="text"],
+    form input[type="number"] {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}

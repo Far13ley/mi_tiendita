@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #93cc8e;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.tabs label {
+    width: 20%;
+    order: 1;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #a7a7a7;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding-top: 25px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    border-bottom: 3px solid #db241b;
+    color: #fff;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+/* Swiper */
+.swiper {
+    margin-top: 20px;
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Product Card */
+.ficha {
+    background-color: #1a1a1a;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ficha:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ficha img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.ficha p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.ficha p:last-child {
+    color: #db241b;
+    font-weight: bold;
+}
+
+/* Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #db241b;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tabs label {
+        width: 100%;
+    }
+
+    .swiper-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .ficha {
+        padding: 15px;
+    }
+}
+
+.boton-eliminar {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.boton-eliminar:hover {
+    color: darkred;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+}
